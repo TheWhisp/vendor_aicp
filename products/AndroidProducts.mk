@@ -1,4 +1,5 @@
 PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/a5ultexx.mk \
     $(LOCAL_DIR)/amami.mk \
     $(LOCAL_DIR)/armani.mk \
     $(LOCAL_DIR)/bacon.mk \
