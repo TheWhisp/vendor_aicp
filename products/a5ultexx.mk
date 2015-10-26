@@ -18,7 +18,7 @@ PRODUCT_MANUFACTURER := samsung
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	DEVICE_MAINTAINERS="thewhisp"
+	DEVICE_MAINTAINERS="Dāvis M. (thewhisp)"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
