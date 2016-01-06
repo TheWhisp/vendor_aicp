@@ -12,33 +12,38 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit some common ACIP stuff.
+
+# Inherit some common AICP stuff
 $(call inherit-product, vendor/aicp/configs/common.mk)
 
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
-$(call inherit-product, device/yu/lettuce/full_lettuce.mk)
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-PRODUCT_NAME := aicp_lettuce
-BOARD_VENDOR := yu
-PRODUCT_DEVICE := lettuce
+# Inherit from dior device
+$(call inherit-product, device/xiaomi/dior/full_dior.mk)
 
-PRODUCT_GMS_CLIENTID_BASE := android-micromax
 
-TARGET_VENDOR_PRODUCT_NAME := YUPHORIA
-TARGET_VENDOR_DEVICE_NAME := YUPHORIA
-PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=YUPHORIA PRODUCT_NAME=YUPHORIA
+PRODUCT_NAME := aicp_dior
+PRODUCT_DEVICE := dior
+PRODUCT_BRAND := Xiaomi
+PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_MODEL := REDMI NOTE 4G
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=YU/YUPHORIA/YUPHORIA:5.1.1/LMY48B/YOG4PAS47N:user/release-keys \
-    PRIVATE_BUILD_DESC="YUPHORIA-user 5.1.1 LMY48B YOG4PAS47N release-keys"
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=dior PRODUCT_NAME=dior
+
+TARGET_CONTINUOUS_SPLASH_ENABLED := true
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	DEVICE_MAINTAINERS="Parth B (TheStrix)"
+	DEVICE_MAINTAINERS="W. Audahadi"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 -include vendor/aicp/configs/bootanimation.mk
+
