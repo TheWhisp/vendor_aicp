@@ -42,9 +42,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=flounder \
-    BUILD_FINGERPRINT=google/volantis/flounder:6.0.1/MMB29K/2419427:user/release-keys \
-    PRIVATE_BUILD_DESC="volantis-user 6.0.1 MMB29K 2419427 release-keys" \
-    BUILD_ID=MMB29K
+    BUILD_FINGERPRINT=google/volantis/flounder:6.0.1/MMB29R/2482564:user/release-keys \
+    PRIVATE_BUILD_DESC="volantis-user 6.0.1 MMB29R 2482564 release-keys" \
+    BUILD_ID=MMB29R
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2048

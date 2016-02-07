@@ -20,7 +20,8 @@ PRODUCT_PACKAGES += \
     LiveWallpapers \
     LiveWallpapersPicker \
     MagicSmokeWallpapers \
-    VisualizationWallpapers
+    VisualizationWallpapers \
+    BasicDreams
 
 # Include librsjni explicitly to workaround GMS issue
 PRODUCT_PACKAGES += \
@@ -42,7 +43,8 @@ PRODUCT_PACKAGES += \
     CMSettingsProvider \
     ExactCalculator \
     AicpExtras \
-    Screencast
+    Screencast \
+    CyanogenSetupWizard
 
 # Extra tools in AICP
 PRODUCT_PACKAGES += \
@@ -185,6 +187,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.alarm_alert=Scandium.ogg
 
 PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:/system/etc/permissions/android.software.live_wallpaper.xml
+
+# Live lockscreen
+PRODUCT_COPY_FILES += \
+    vendor/aicp/configs/permissions/org.cyanogenmod.livelockscreen.xml:system/etc/permissions/org.cyanogenmod.livelockscreen.xml
 
 # Inherit common build.prop overrides
 -include vendor/aicp/configs/common_versions.mk
