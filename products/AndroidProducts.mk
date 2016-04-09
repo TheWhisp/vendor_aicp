@@ -44,6 +44,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/klimtwifi.mk \
     $(LOCAL_DIR)/ls980.mk \
     $(LOCAL_DIR)/lettuce.mk \
+    $(LOCAL_DIR)/lux.mk \
     $(LOCAL_DIR)/m7.mk \
     $(LOCAL_DIR)/m7spr.mk \
     $(LOCAL_DIR)/m7vzw.mk \
@@ -54,8 +55,10 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/osprey.mk \
     $(LOCAL_DIR)/otus.mk \
     $(LOCAL_DIR)/peregrine.mk \
+    $(LOCAL_DIR)/serranodsdd.mk \
     $(LOCAL_DIR)/shamu.mk \
     $(LOCAL_DIR)/sprout4.mk \
+    $(LOCAL_DIR)/surnia.mk \
     $(LOCAL_DIR)/thea.mk \
     $(LOCAL_DIR)/t0lte.mk \
     $(LOCAL_DIR)/tomato.mk \
@@ -70,6 +73,8 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/victara.mk \
     $(LOCAL_DIR)/vs920.mk \
     $(LOCAL_DIR)/vs980.mk \
+    $(LOCAL_DIR)/vs985.mk \
+    $(LOCAL_DIR)/wt88047.mk \
     $(LOCAL_DIR)/wx_na_wf.mk \
     $(LOCAL_DIR)/xt1053.mk \
     $(LOCAL_DIR)/xt1060.mk \
